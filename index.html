@@ -1,23 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta  name="description" content="E-commerce product page showcasing various products with images, descriptions, and prices.">
-    <meta name="keywords" content="e-commerce, products, online shopping, buy online, product page">
-    <meta name="author" content="Esmira Agahedova">
-    <meta name="author" content="Vedant Obaleppanavar">
-    <meta name="author" content="Siddharth Suresh">
-    <link rel="stylesheet" href="styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="E-commerce product page showcasing various products with images, descriptions, and prices."
+    />
+    <meta
+      name="keywords"
+      content="e-commerce, products, online shopping, buy online, product page"
+    />
+    <meta name="author" content="Esmira Agahedova" />
+    <meta name="author" content="Vedant Obaleppanavar" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="web-site icon" href="/images/favicon-32x32.png" />
     <title>E-commerce product page</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-</head>
-<body>
+  </head>
+  <body>
     <header>
+      <h1>sneakers</h1>
+      <nav>
+        <ul>
+          <li><a href="#collections">Collections</a></li>
+          <li><a href="#men">Men</a></li>
+          <li><a href="#women">Women</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
 
+      <div class="cart-icon">
+        <img src="/images/icon-cart.svg" alt="cart icon" />
+        <div class="product-amount">0</div>
+        <!-- we will make it interactive with js -->
+      </div>
+      <div class="profile-pic">
+        <img src="/images/image-avatar.png" alt="avatar img" />
+      </div>
+      <hr />
     </header>
-    <body></body>
-    <footer></footer>
-    <aside></aside>    
-</body>
+    <body>
+      <div class="product-img">
+        <div class="main-img">
+          <img src="/images/image-product-1.jpg" alt="product" />
+        </div>
+        <div class="thumbnail-imgs">
+          <img src="/images/image-product-1-thumbnail.jpg" alt="product" />
+          <img src="/images/image-product-2-thumbnail.jpg" alt="product" />
+          <img src="/images/image-product-3-thumbnail.jpg" alt="product" />
+          <img src="/images/image-product-4-thumbnail.jpg" alt="product" />
+        </div>
+      </div>
+      <div class="product-description">
+        <h6>Sneaker Company</h6>
+        <h1>Fall Limited Edition Sneakers</h1>
+        <p>
+          These low-profile sneakers are your perfect casual wear companion.
+          Featuring a durable rubber outer sole, they’ll withstand everything
+          the weather can offer.
+        </p>
+        <div class="price">
+          <div>
+            <h2>$125.00</h2>
+            <div>
+              <p>50%</p>
+            </div>
+          </div>
+          <p>$250.00</p>
+        </div>
+        <div class="add-to-cart">
+          <!-- we will make it interactive with js -->
+          <div class="counter">
+            <img src="/images/icon-minus.svg" alt="-" />
+            <p>0</p>
+            <img src="/images/icon-plus.svg" alt="+" />
+          </div>
+          <div class="add-to-cart-button">
+            <img src="/images/icon-cart.svg" alt="add to cart" />
+            <p>Add to cart</p>
+          </div>
+        </div>
+      </div>
+    </body>
+    <aside style="display: none">           <!-- we will make it interactive with js, on click they will appear -->
+
+      <div class="cart">
+        <p>Cart</p>
+        <hr />
+        <p>Your cart is empty.</p>
+
+        <!-- or, we will make it interactive with js -->
+
+        <p>Cart</p>
+        <hr />
+        <div>
+          <div>
+            <div class="product">
+              <img src="/images/image-product-1-thumbnail.jpg" alt="product" />
+              <p class="product-name">Fall Limited Edition Sneakers</p>
+              <p class="price">$125.00</p>
+              <p class="product-amount">x3</p>
+              <p class="total-price">$375.00</p>
+            </div>
+            <img src="/images/icon-delete.svg" alt="" />
+          </div>
+          <div class="checkout">
+            <p>Checkout</p>
+          </div>
+        </div>
+      </div>
+      <div class="lightbox-gallery">
+        <div class="lightbox-gallery-product-img">
+          <img src="/images/icon-close.svg" alt="close" />
+          <img src="/images/image-product-1.jpg" alt="product" />
+        </div>
+        <div class="lightbox-gallery-thumbnail-product-img">
+          <img src="/images/image-product-1-thumbnail.jpg" alt="product" />
+          <img src="/images/image-product-2-thumbnail.jpg" alt="product" />
+          <img src="/images/image-product-3-thumbnail.jpg" alt="product" />
+          <img src="/images/image-product-4-thumbnail.jpg" alt="product" />
+        </div>
+      </div>
+    </aside>
+  </body>
 </html>
