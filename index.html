@@ -11,80 +11,116 @@
       name="keywords"
       content="e-commerce, products, online shopping, buy online, product page"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
     <meta name="author" content="Esmira Agahedova" />
     <meta name="author" content="Vedant Obaleppanavar" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="style.css" />
     <link rel="web-site icon" href="/images/favicon-32x32.png" />
     <title>E-commerce product page</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
   <body>
-    <header>
-      <h1>sneakers</h1>
-      <nav>
-        <ul>
-          <li><a href="#collections">Collections</a></li>
-          <li><a href="#men">Men</a></li>
-          <li><a href="#women">Women</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
+    <header class="navigation-bar">
+      <div class="burger-menu-icon">
+        <img
+          src="/images/icon-menu.svg"
+          alt="burger-menu-icon"
+          style="display: none"
+        />
+      </div>
+      <div class="logo-ul">
+        <h1 class="logo-title">sneakers</h1>
+        <nav>
+          <ul>
+            <li class="nav-link"><a href="#collections">Collections</a></li>
+            <li class="nav-link"><a href="#men">Men</a></li>
+            <li class="nav-link"><a href="#women">Women</a></li>
+            <li class="nav-link"><a href="#about">About</a></li>
+            <li class="nav-link"><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
 
-      <div class="cart-icon">
-        <img src="/images/icon-cart.svg" alt="cart icon" />
-        <div class="product-amount">0</div>
-        <!-- we will make it interactive with js -->
+      <div class="cart-avatar">
+        <div class="cart-icon">
+          <img src="/images/icon-cart.svg" alt="cart icon" />
+          <div class="product-amount"></div>
+          <!-- we will make it interactive with js -->
+        </div>
+        <div class="profile-pic">
+          <img src="/images/image-avatar.png" alt="avatar img" />
+        </div>
       </div>
-      <div class="profile-pic">
-        <img src="/images/image-avatar.png" alt="avatar img" />
-      </div>
+
       <hr />
     </header>
-    <body>
+    <div class="product-about">
       <div class="product-img">
         <div class="main-img">
           <img src="/images/image-product-1.jpg" alt="product" />
         </div>
         <div class="thumbnail-imgs">
-          <img src="/images/image-product-1-thumbnail.jpg" alt="product" />
-          <img src="/images/image-product-2-thumbnail.jpg" alt="product" />
-          <img src="/images/image-product-3-thumbnail.jpg" alt="product" />
-          <img src="/images/image-product-4-thumbnail.jpg" alt="product" />
+          <img
+            src="/images/image-product-1-thumbnail.jpg"
+            alt="product"
+            class="thumbnail-img"
+          />
+          <img
+            src="/images/image-product-2-thumbnail.jpg"
+            alt="product"
+            class="thumbnail-img"
+          />
+          <img
+            src="/images/image-product-3-thumbnail.jpg"
+            alt="product"
+            class="thumbnail-img"
+          />
+          <img
+            src="/images/image-product-4-thumbnail.jpg"
+            alt="product"
+            class="thumbnail-img"
+          />
         </div>
       </div>
       <div class="product-description">
-        <h6>Sneaker Company</h6>
-        <h1>Fall Limited Edition Sneakers</h1>
-        <p>
+        <h6 class="product-description-title">Sneaker Company</h6>
+        <h1 class="product-description-p-name">
+          Fall Limited Edition Sneakers
+        </h1>
+        <p class="product-description-desc">
           These low-profile sneakers are your perfect casual wear companion.
           Featuring a durable rubber outer sole, they’ll withstand everything
           the weather can offer.
         </p>
         <div class="price">
-          <div>
+          <div class="price-tag">
             <h2>$125.00</h2>
-            <div>
-              <p>50%</p>
-            </div>
+            <p>50% <br /></p>
           </div>
+
           <p>$250.00</p>
         </div>
         <div class="add-to-cart">
           <!-- we will make it interactive with js -->
           <div class="counter">
-            <img src="/images/icon-minus.svg" alt="-" />
-            <p>0</p>
-            <img src="/images/icon-plus.svg" alt="+" />
+            <img src="/images/icon-minus.svg" alt="-" class="decrease-btn" />
+            <p class="count">0</p>
+            <img src="/images/icon-plus.svg" alt="+" class="increase-btn" />
           </div>
-          <div class="add-to-cart-button">
+          <button class="add-to-cart-button">
             <img src="/images/icon-cart.svg" alt="add to cart" />
             <p>Add to cart</p>
-          </div>
+          </button>
         </div>
       </div>
-    </body>
-    <aside style="display: none">           <!-- we will make it interactive with js, on click they will appear -->
+    </div>
+    <aside style="display: none">
+      <!-- we will make it interactive with js, on click they will appear -->
 
       <div class="cart">
         <p>Cart</p>
