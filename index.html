@@ -26,17 +26,17 @@
   </head>
   <body>
     <header class="navigation-bar">
-      <div class="burger-menu-icon">
-        <img
-          src="/images/icon-menu.svg"
-          alt="burger-menu-icon"
-          style="display: none"
-        />
-      </div>
-      <div class="logo-ul">
+      <div class="logo-ul nav-left">
+        <div class="burger-menu-icon">
+          <img
+            src="/images/icon-menu.svg"
+            alt="burger-menu-icon"
+            class="burger-menu-img"
+          />
+        </div>
         <h1 class="logo-title">sneakers</h1>
         <nav>
-          <ul>
+          <ul class="nav-links">
             <li class="nav-link"><a href="#collections">Collections</a></li>
             <li class="nav-link"><a href="#men">Men</a></li>
             <li class="nav-link"><a href="#women">Women</a></li>
@@ -103,7 +103,9 @@
             <p>50% <br /></p>
           </div>
 
-          <p style="text-decoration:line-through; color: var(--clr-blue-600)">$250.00</p>
+          <p style="text-decoration: line-through; color: var(--clr-blue-600)">
+            $250.00
+          </p>
         </div>
         <div class="add-to-cart">
           <!-- we will make it interactive with js -->
